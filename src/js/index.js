@@ -1,16 +1,21 @@
 import Vue from 'vue';
-import app from '../compontens/app.vue';
-import '../css/main.css';
+import app from '../components/app.vue';
+import '../components/theme-default/index.css';
+import ElDialog from '../components/dialog/index';
 
-import aop from './AOP.js';
+// import aop from './AOP.js';
+//
+// import push from './uncurry.js';
+//
+// aop();
+//
+// const arr = [1, 2, 3];
+// push(arr, 4);
+// console.log(arr);
 
-import push from './uncurry.js';
+console.log(ElDialog, Vue.prototype);
+Vue.use(ElDialog);
 
-aop();
-
-const arr = [1, 2, 3];
-push(arr, 4);
-console.log(arr);
 new Vue({
   el: '#app',
   components: {
