@@ -3,6 +3,7 @@
       <div @click='say'>
         hello wor
       </div>
+      <input id='test' v-focus>
       <el-dialog title="测试一下" :visible.sync='visiblity'>
         这是一段信息
         <span slot="footer" class="dialog-footer">
@@ -21,6 +22,7 @@
     },
     methods:{
       say() {
+        this.sayName();
         this.visiblity = true;
       }
     }
