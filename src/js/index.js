@@ -3,6 +3,8 @@ import app from '../components/app.vue';
 import '../components/theme-default/index.css';
 import ElDialog from '../components/dialog/index';
 import create from '../components/test/index';
+import datePic from '../components/date/index';
+
 // import aop from './AOP.js';
 //
 // import push from './uncurry.js';
@@ -14,6 +16,7 @@ import create from '../components/test/index';
 // console.log(arr);
 Vue.use(ElDialog);
 Vue.use(create);
+Vue.use(datePic);
 Vue.sayHello();
 new Vue({
   el: '#app',
